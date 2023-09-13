@@ -9,37 +9,45 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <nav
-      class="flex justify-between items-center p-10 overflow-hidden m-0 fixed w-full bg-white"
-    >
-      <div>
-        <img src="" alt="The logo" />
-      </div>
+  <body class="box-border">
+    <header class="flex">
+      <section>
+        <nav
+          class="flex flex-wrap justify-between items-center lg:p-10 sm:p-5 m-0 w-full bg-white"
+        >
+          <div>
+            <img src="" alt="The logo of uncodebar" />
+          </div>
+          <ul class="flex flex-wrap gap-20">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#event">Event</a></li>
+            <li><a href="#highlights">Highlights</a></li>
+            <li><a href="#sponsor">Sponsor</a></li>
+            <li><a href="#locations">Locations</a></li>
+            <li><a href="#faqs">FAQs</a></li>
+          </ul>
 
-      <ul class="flex gap-20">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#event">Event</a></li>
-        <li><a href="#highlights">Highlights</a></li>
-        <li><a href="#sponsor">Sponsor</a></li>
-        <li><a href="#locations">Locations</a></li>
-        <li><a href="#faqs">FAQs</a></li>
-      </ul>
+          <ul
+            class="flex flex-wrap gap-5 text-xs border-solid border-2 border-zinc-800 p-2"
+          >
+            <li><a href="">London</a></li>
+            <li><a href="">Barcelona</a></li>
+            <li><a href="">Glasgow</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
 
-      <ul class="flex gap-5 text-xs border-solid border-2 border-zinc-800 p-2">
-        <li><a href="">London</a></li>
-        <li><a href="">Barcelona</a></li>
-        <li><a href="">Glasgow</a></li>
-      </ul>
-    </nav>
-
-    <main>
+    <main class="sm:text-sm">
       <section id="home">
         <div class="flex flex-wrap">
           <div
-            class="flex flex-col flex-wrap bg-blue-500 w-2/4 justify-center gap-10 p-20"
+            class="flex flex-col bg-blue-500 lg:w-2/4 justify-center gap-10 p-20"
           >
             <h1 class="text-5xl">uncodebar 2023</h1>
             <h2 class="text-3xl">Sat, 9th September | 10:00 - 17:30 BST</h2>
@@ -58,9 +66,9 @@
             </button>
           </div>
 
-          <div class="w-2/4">
+          <div class="lg:w-2/4">
             <img
-              class="w-full"
+              class="max-w-full"
               src="../images/sample_photo.png"
               alt="A man and a woman working on a computer in an office"
             />
@@ -68,14 +76,14 @@
         </div>
 
         <div class="flex flex-wrap">
-          <div class="bg-pink-600 text-3xl w-2/4 p-20">
+          <div class="bg-pink-600 text-3xl p-20 lg:w-2/4 sm:min-w-full">
             <p>At an unconference:</p>
             <p>- no topics predetermined</p>
             <p>- no keynote speakers</p>
             <p>- no panels or working groups</p>
           </div>
 
-          <div class="bg-blue-900 text-3xl w-2/4 p-20">
+          <div class="bg-blue-900 text-3xl p-20 lg:w-2/4 sm:min-w-full">
             <p>Instead:</p>
             <p>+ collaboration</p>
             <p>+ no agenda until the day</p>
@@ -86,9 +94,9 @@
 
       <section
         id="event"
-        class="flex bg-pink-400 flex-wrap justify-center items-center"
+        class="flex flex-wrap bg-pink-400 justify-center items-center"
       >
-        <div class="p-20 flex flex-col gap-5 w-2/4">
+        <div class="flex flex-col flex-wrap gap-5 lg:w-2/4 p-20">
           <h2 class="text-5xl">The event</h2>
           <p class="text-xl">
             An unconference is a "loosely structured open space event
@@ -103,7 +111,7 @@
             participants create it.
           </p>
 
-          <div class="flex flex-col gap-2">
+          <div class="flex flex-col gap-2 flex-wrap">
             <h3 class="text-3xl">Venue</h3>
             <p class="text-xl">Makers</p>
             <p class="text-xl">5-25 Scrutton Street</p>
@@ -129,7 +137,7 @@
           </button>
         </div>
 
-        <div class="w-2/4 p-20">
+        <div class="lg:w-2/4 p-20">
           <div
             class="flex flex-col gap-5 p-20 border-solid border-2 border-slate-950"
           >
@@ -160,18 +168,15 @@
 
         <div class="flex gap-10 flex-wrap">
           <iframe
-            width="350"
-            height="300"
+            class="max-w-96 max-h-96"
             src="https://www.youtube.com/embed/eMKcynl-A8o"
           ></iframe>
           <iframe
-            width="350"
-            height="300"
+            class="max-w-96 max-h-96"
             src="https://www.youtube.com/embed/eMKcynl-A8o"
           ></iframe>
           <iframe
-            width="350"
-            height="300"
+            class="max-w-96 max-h-96"
             src="https://www.youtube.com/embed/eMKcynl-A8o"
           ></iframe>
         </div>
@@ -188,9 +193,9 @@
         class="flex flex-col justify-center items-center p-20 gap-10"
       >
         <img
+          class="max-w-lg w-56"
           src="../logo/sample_sponsor.png"
           alt="a logo of contentful"
-          max-width="500px"
         />
         <div>
           <p class="text-center max-w-lg">
@@ -209,7 +214,7 @@
       </section>
 
       <section id="locations" class="bg-blue-800 flex flex-col p-20 gap-10">
-        <div class="inline-block">
+        <div class="flex flex-col">
           <h2 class="text-5xl">Our locations</h2>
           <p class="text-xl">
             uncodebar has <strong>3 locations</strong>, London, Glasgow &
@@ -240,67 +245,70 @@
         </div>
       </section>
 
-      <section id="faqs" class="">
+      <section id="faqs">
         <div class="flex flex-col items-center justify-center p-20 gap-10">
           <h2 class="text-5xl">Frequently Asked Questions</h2>
 
           <!-- accordion menu -->
           <div class="max-w-md">
             <button class="bg-slate-300 p-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. <i class="material-icons">arrow_drop_up</i>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              <i class="material-icons">arrow_drop_up</i>
             </button>
             <div class="hidden p-2">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Distinctio earum laboriosam esse consequuntur fugiat labore dolore
-                perferendis aut alias rerum illum at, quia cum! Placeat mollitia
-                quam voluptates odio vel.
+                Distinctio earum laboriosam esse consequuntur fugiat labore
+                dolore perferendis aut alias rerum illum at, quia cum! Placeat
+                mollitia quam voluptates odio vel.
               </p>
             </div>
           </div>
 
           <div class="max-w-md">
             <button class="bg-slate-300 p-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. <i class="material-icons">arrow_drop_up</i>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              <i class="material-icons">arrow_drop_up</i>
             </button>
             <div class="hidden p-2">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Distinctio earum laboriosam esse consequuntur fugiat labore dolore
-                perferendis aut alias rerum illum at, quia cum! Placeat mollitia
-                quam voluptates odio vel.
-              </p>
-            </div>
-          </div>  
-          
-          <div class="max-w-md">
-            <button class="bg-slate-300 p-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. <i class="material-icons">arrow_drop_up</i>
-            </button>
-            <div class="hidden p-2">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Distinctio earum laboriosam esse consequuntur fugiat labore dolore
-                perferendis aut alias rerum illum at, quia cum! Placeat mollitia
-                quam voluptates odio vel.
+                Distinctio earum laboriosam esse consequuntur fugiat labore
+                dolore perferendis aut alias rerum illum at, quia cum! Placeat
+                mollitia quam voluptates odio vel.
               </p>
             </div>
           </div>
 
           <div class="max-w-md">
             <button class="bg-slate-300 p-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. <i class="material-icons">arrow_drop_down</i>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              <i class="material-icons">arrow_drop_up</i>
+            </button>
+            <div class="hidden p-2">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio earum laboriosam esse consequuntur fugiat labore
+                dolore perferendis aut alias rerum illum at, quia cum! Placeat
+                mollitia quam voluptates odio vel.
+              </p>
+            </div>
+          </div>
+
+          <div class="max-w-md">
+            <button class="bg-slate-300 p-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              <i class="material-icons">arrow_drop_down</i>
             </button>
             <div class="p-2">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Distinctio earum laboriosam esse consequuntur fugiat labore dolore
-                perferendis aut alias rerum illum at, quia cum! Placeat mollitia
-                quam voluptates odio vel.
+                Distinctio earum laboriosam esse consequuntur fugiat labore
+                dolore perferendis aut alias rerum illum at, quia cum! Placeat
+                mollitia quam voluptates odio vel.
               </p>
             </div>
-          </div>  
-          
+          </div>
         </div>
       </section>
     </main>
