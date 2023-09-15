@@ -15,7 +15,8 @@
     />
   </head>
   <body class="box-border">
-    <header class="flex">
+
+    <header>
       <section>
         <nav
           class="flex flex-wrap justify-between items-center lg:p-10 sm:p-5 m-0 w-full bg-white"
@@ -313,20 +314,20 @@
       </section>
     </main>
 
-    <footer class="flex flex-col p-20 gap-10 bg-blue-800 text-slate-100 pb-4">
-      <div class="flex justify-between">
+    <footer class="flex flex-col p-20 gap-10 bg-blue-800 text-slate-100 pb-4 sm:max-lg:items-center">
+      <div class="flex flex-col gap-10 lg:flex-row lg:justify-between">
         <div class="flex flex-col gap-2">
           <h3>Join our community</h3>
-          <form>
+          <form class="sm-max-md:flex-row sm-max:md:gap-2 sm:max-lg:flex">
             <label for="e-mail"></label>
             <input
-              class="p-2 border-none rounded-b-none -me-5 rounded-l-lg"
+              class="border-none md:rounded-b-none md:-me-2 md:rounded-l-lg p-2"
               type="text"
               id="e-mail"
               placeholder="Enter your e-mail"
             />
             <button
-              class="bg-gradient-to-tr from-blue-800 to-pink-500 p-2 pr-8 pl-8 w-max text-white border-none rounded-r-lg"
+              class="bg-gradient-to-tr from-blue-800 to-pink-500 p-2 pr-8 pl-8 w-max text-white border-none md:rounded-r-lg"
               type="submit"
             >
               JOIN
