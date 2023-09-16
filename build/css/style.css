@@ -550,8 +550,57 @@ video {
   display: none;
 }
 
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
+.h-2 {
+  height: 0.5rem;
+}
+
+.h-auto {
+  height: auto;
+}
+
 .max-h-96 {
   max-height: 24rem;
+}
+
+.max-h-full {
+  max-height: 100%;
+}
+
+.max-h-screen {
+  max-height: 100vh;
+}
+
+.min-h-min {
+  min-height: -moz-min-content;
+  min-height: min-content;
 }
 
 .w-56 {
@@ -571,9 +620,46 @@ video {
   width: 100vw;
 }
 
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-20 {
+  width: 5rem;
+}
+
+.w-40 {
+  width: 10rem;
+}
+
+.w-1\/3 {
+  width: 33.333333%;
+}
+
 .min-w-fit {
   min-width: -moz-fit-content;
   min-width: fit-content;
+}
+
+.min-w-min {
+  min-width: -moz-min-content;
+  min-width: min-content;
+}
+
+.min-w-0 {
+  min-width: 0px;
+}
+
+.min-w-full {
+  min-width: 100%;
 }
 
 .max-w-full {
@@ -586,6 +672,32 @@ video {
 
 .max-w-xs {
   max-width: 20rem;
+}
+
+.max-w-screen-2xl {
+  max-width: 1536px;
+}
+
+.max-w-screen-lg {
+  max-width: 1024px;
+}
+
+.max-w-md {
+  max-width: 28rem;
+}
+
+.max-w-sm {
+  max-width: 24rem;
+}
+
+.max-w-fit {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.max-w-max {
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 .flex-col {
@@ -634,6 +746,10 @@ video {
 
 .border-2 {
   border-width: 2px;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .border-solid {
@@ -792,7 +908,41 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.hover\:aspect-square:hover {
+  aspect-ratio: 1 / 1;
+}
+
 @media (min-width: 640px) {
+  .sm\:aspect-video {
+    aspect-ratio: 16 / 9;
+  }
+
+  .sm\:max-h-full {
+    max-height: 100%;
+  }
+
+  .sm\:max-h-min {
+    max-height: -moz-min-content;
+    max-height: min-content;
+  }
+
+  .sm\:min-w-min {
+    min-width: -moz-min-content;
+    min-width: min-content;
+  }
+
+  .sm\:max-w-full {
+    max-width: 100%;
+  }
+
+  .sm\:max-w-lg {
+    max-width: 32rem;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
   .sm\:p-5 {
     padding: 1.25rem;
   }
@@ -811,6 +961,20 @@ video {
       align-items: center;
     }
   }
+
+  @media not all and (min-width: 768px) {
+    .sm\:max-md\:aspect-square {
+      aspect-ratio: 1 / 1;
+    }
+
+    .sm\:max-md\:aspect-video {
+      aspect-ratio: 16 / 9;
+    }
+
+    .sm\:max-md\:justify-center {
+      justify-content: center;
+    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -823,8 +987,68 @@ video {
     display: flex;
   }
 
+  .md\:aspect-square {
+    aspect-ratio: 1 / 1;
+  }
+
+  .md\:aspect-video {
+    aspect-ratio: 16 / 9;
+  }
+
+  .md\:max-h-96 {
+    max-height: 24rem;
+  }
+
   .md\:w-2\/4 {
     width: 50%;
+  }
+
+  .md\:w-20 {
+    width: 5rem;
+  }
+
+  .md\:w-full {
+    width: 100%;
+  }
+
+  .md\:w-40 {
+    width: 10rem;
+  }
+
+  .md\:min-w-min {
+    min-width: -moz-min-content;
+    min-width: min-content;
+  }
+
+  .md\:min-w-full {
+    min-width: 100%;
+  }
+
+  .md\:min-w-max {
+    min-width: -moz-max-content;
+    min-width: max-content;
+  }
+
+  .md\:min-w-fit {
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+  }
+
+  .md\:max-w-full {
+    max-width: 100%;
+  }
+
+  .md\:max-w-lg {
+    max-width: 32rem;
+  }
+
+  .md\:max-w-fit {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+
+  .md\:max-w-md {
+    max-width: 28rem;
   }
 
   .md\:flex-row {
@@ -853,11 +1077,53 @@ video {
   .md\:pl-20 {
     padding-left: 5rem;
   }
+
+  .hover\:md\:aspect-square:hover {
+    aspect-ratio: 1 / 1;
+  }
+
+  @media not all and (min-width: 1024px) {
+    .md\:max-lg\:w-40 {
+      width: 10rem;
+    }
+
+    .md\:max-lg\:max-w-0 {
+      max-width: 0rem;
+    }
+
+    .md\:max-lg\:max-w-lg {
+      max-width: 32rem;
+    }
+
+    .md\:max-lg\:flex-row {
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: 768px) {
+    @media not all and (min-width: 1024px) {
+      .md\:md\:max-lg\:flex-row {
+        flex-direction: row;
+      }
+    }
+  }
 }
 
 @media (min-width: 1024px) {
+  .lg\:aspect-video {
+    aspect-ratio: 16 / 9;
+  }
+
+  .lg\:aspect-square {
+    aspect-ratio: 1 / 1;
+  }
+
   .lg\:w-2\/4 {
     width: 50%;
+  }
+
+  .lg\:w-40 {
+    width: 10rem;
   }
 
   .lg\:flex-row {
@@ -893,5 +1159,12 @@ video {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  @media (min-width: 1024px) {
+    .lg\:lg\:text-3xl {
+      font-size: 1.875rem;
+      line-height: 2.25rem;
+    }
   }
 }
