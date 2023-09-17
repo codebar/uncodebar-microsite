@@ -216,7 +216,7 @@ Break</p>
         </button>
       </section>
       
-      <section id="locations" class="bg-blue-800 flex flex-col gap-10">
+      <section id="locations" class="bg-blue-800 flex flex-col">
         <div class="lg:p-20 p-10 text-white flex flex-col gap-5">
           <h2 class="lg:text-5xl text-2xl">Our locations</h2>
           <p class="lg:text-xl text-sm">
@@ -225,36 +225,36 @@ Break</p>
           </p>
         </div>
 
-          <div class="flex justify-end relative top-24">
-            <div class="max-w-lg p-10 lg:px-20 flex flex-col items-center gap-5 bg-yellow-500">
-              <h3 class="text-2xl">Glasgow</h3>
-              <p class="lg:text-xl text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem enim ducimus culpa nulla sit!
-              </p>
-              <button class="bg-gradient-to-tr from-blue-800 to-pink-500 p-5 w-max rounded-full text-white border-none" type="submit"> VISIT GLASGOW
-              </button>
-            </div>
-            
-            <div class="max-w-lg p-10 lg:px-20 flex flex-col items-center gap-5 bg-blue-500">
-              <h3 class="text-2xl">Barcelona</h3>
-              <p class="lg:text-xl text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem enim ducimus culpa nulla sit!
-              </p>
-              <button class="bg-gradient-to-tr from-blue-800 to-pink-500 p-5 w-max rounded-full text-white border-none" type="submit"> VISIT BARCELONA
-              </button>
-            </div>
+        <div class="flex flex-col relative items-end justify-end sm:flex-row sm:top-24">
+          <div class="max-w-lg p-10 lg:p-20 flex flex-col text-center justify-center items-center gap-10 bg-yellow-500">
+            <h3 class="text-2xl">Glasgow</h3>
+            <p class="lg:text-xl text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem enim ducimus culpa nulla sit!
+            </p>
+            <button class="bg-gradient-to-tr from-blue-800 to-pink-500 p-5 w-max rounded-full text-white border-none" type="submit"> VISIT GLASGOW
+            </button>
           </div>
+          
+          <div class="max-w-lg p-10 lg:p-20 flex flex-col text-center justify-center items-center gap-10 bg-blue-500">
+            <h3 class="text-2xl">Barcelona</h3>
+            <p class="lg:text-xl text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem enim ducimus culpa nulla sit!
+            </p>
+            <button class="bg-gradient-to-tr from-blue-800 to-pink-500 p-5 w-max rounded-full text-white border-none" type="submit"> VISIT BARCELONA
+            </button>
+          </div>
+        </div>
       </section>
 
-      <section id="faqs" class="mt-40">
-        <div class="flex flex-col md-max-lg:p-20 p-10 gap-10">
+      <section id="faqs" class="mt-0 sm:mt-20">
+        <div class="flex flex-col gap-5 p-10 lg:p-20">
           <h2 class="lg:text-5xl text-3xl">Frequently Asked Questions</h2>
 
           <!-- accordion menu -->
-          <div class="flex flex-col lg:p-5" >
-            <button class="flex justify-between p-2">
+          <div class="flex flex-col items-start" >
+            <button class="flex justify-start md:justify-between p-1 md:p-2 text-sm">
               <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong>
               <i class="material-icons">arrow_drop_up</i>
             </button>
@@ -268,8 +268,8 @@ Break</p>
             </div>
           </div>
 
-          <div class="flex flex-col lg:p-5">
-            <button class="flex justify-between p-2">
+          <div class="flex flex-col items-start">
+            <button class="flex justify-start md:justify-between p-1 md:p-2 text-sm">
               <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong>
               <i class="material-icons">arrow_drop_up</i>
             </button>
@@ -283,8 +283,8 @@ Break</p>
             </div>
           </div>
 
-          <div class="flex flex-col lg:p-5">
-            <button class="flex justify-between p-2">
+          <div class="flex flex-col items-start">
+            <button class="flex justify-start md:justify-between p-1 md:p-2 text-sm">
               <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong>
               <i class="material-icons">arrow_drop_up</i>
             </button>
@@ -298,12 +298,12 @@ Break</p>
             </div>
           </div>
 
-          <div class="flex flex-col lg:p-5">
-            <button class="flex justify-between">
+          <div class="flex flex-col items-start">
+            <button class="flex justify-start md:justify-between p-1 md:p-2 text-sm">
               <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong>
               <i class="material-icons">arrow_drop_down</i>
             </button>
-            <div class="p-2">
+            <div class="flex justify-start md:justify-between p-1 md:p-2">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Distinctio earum laboriosam esse consequuntur fugiat labore
@@ -316,9 +316,9 @@ Break</p>
       </section>
     </main>
 
-    <footer class="flex flex-col p-20 gap-10 bg-blue-800 text-slate-100 pb-4 sm:max-lg:items-center">
-      <div class="flex flex-col gap-10 lg:flex-row lg:justify-between">
-        <div class="flex flex-col gap-2">
+    <footer class="flex flex-col p-10 lg:p-20 gap-10 bg-blue-800 text-slate-100 pb-4">
+      <div class="flex flex-col gap-10 sm:flex-row sm:justify-between">
+        <div class="flex flex-col gap-2 sm:gap-2">
           <h3>Join our community</h3>
           <form class="sm-max-md:flex-row sm-max:md:gap-2 sm:max-lg:flex">
             <label for="e-mail"></label>
@@ -337,7 +337,7 @@ Break</p>
           </form>
         </div>
 
-        <div class="flex flex-col gap-2">
+        <div class="flex flex-col gap-2 sm:gap-2">
           <h3>Follow us</h3>
           <div class="flex gap-5">
             <a href="#" class="fa fa-twitter"></a>
@@ -347,7 +347,7 @@ Break</p>
           </div>
         </div>
 
-        <div class="flex flex-col gap-2">
+        <div class="flex flex-col gap-2 sm:gap-2">
           <h3>Get in touch</h3>
           <p><a href="mailto:hello@codebar.io">hello@codebar.io</a></p>
         </div>
