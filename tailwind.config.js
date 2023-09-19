@@ -10,10 +10,15 @@ module.exports = {
         main_pink: "rgb(255, 0, 102)",
         main_yellow: "rgb(255, 199, 0)",
       },
+      boxShadow: {
+        "3xl": "20px 0px 400px 20px #FFFFFF",
+      },
+      borderWidth: {
+        DEFAULT: '0.5px',
+      }
     },
-  },
-  plugins: [],
-};
-
+    plugins: [],
+  }
+}
 
 
