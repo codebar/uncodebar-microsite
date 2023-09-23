@@ -20,7 +20,7 @@
       <section>
          <nav class="bg-white m-0 w-full border-b border-gray-200 dark:border-gray-600 pb-4">
           <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <img src="images/uncodebar-logo.png" alt="The logo" class="w-40"/> <!-- The logo of Uncodebar -->
+            <img src="images/uncodebar-logo.png" alt="The logo of Uncodebar" class="w-40"/> 
             
             <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
@@ -93,9 +93,11 @@
             <p class="font-semibold -m-5">NEW!</p>
             <span  class="font-semibold">&#8964;</span>
           </div>
-            <h1 class="lg:text-5xl text-2xl">uncodebar 2023</h1>
-            <h2 class="lg:text-3xl text-xl">Sat, 9th September | 10:00 - 17:30 BST</h2>
-            <p class="lg:text-xl text-sm">
+            <div class="flex flex-col gap-5">
+              <h1 class="lg:text-5xl text-2xl font-semibold">uncodebar 2023</h1>
+              <h2 class="lg:text-2xl text-xl">Sat, 9th September | 10:00 - 17:30 BST</h2>
+            </div>
+            <p class="lg:text-lg text-sm font-semibold">
               Now in the NINTH year, uncodebar, the codebar unconference is
               back! Our annual one-day conference that encourages the codebar
               community to come together, share knowledge, and strengthen the
@@ -109,7 +111,7 @@
             </button> -->
           </div>
 
-          <div class="lg:w-2/4  w-screen">
+          <div class="lg:w-2/4 flex w-screen">
             <img
               class="max-w-full"
               src="images/kim-diep.jpg"
@@ -137,24 +139,32 @@
 
       <section
         id="event"
-        class="flex flex-col md:flex-row bg-light_pink lg:p-20 p-10 gap-5"
+        class="flex flex-col md:flex-row bg-light_pink lg:p-20 p-10 gap-10 font-semibold"
       >
-        <div class="flex flex-col flex-wrap gap-5 lg:w-2/4 min-w-screen">
-          <h2 class="lg:text-5xl text-2xl">The event</h2>
-          <p class="lg:text-xl text-sm">
-            An unconference is a "loosely structured open space event
-            emphasising the informal exchange of information and ideas between
-            participants."
-          </p>
-          <p class="lg:text-xl text-sm">
-            The event lives and dies through the participation of its attendees.
-            You propose talks, workshops, and panels and decide what topics will
-            be discussed. Then people convene in separate breakout sessions. In
-            other words, an unconference has no agenda until the morning when
-            participants create it.
-          </p>
+        <div class="flex flex-col flex-wrap gap-8 lg:w-2/4 min-w-screen">
+          <div class="lg:text-5xl text-2xl lg:pb-2">
+            <h2>The event</h2>
+          </div>
 
-          <div class="flex flex-col gap-2 flex-wrap">
+          <div class="lg:text-xl text-md">
+            <p>
+              An unconference is a "loosely structured open space event
+              emphasising the informal exchange of information and ideas between
+              participants."
+            </p>
+          </div>
+
+          <div class="lg:text-xl text-md">
+            <p>
+              The event lives and dies through the participation of its attendees.
+              You propose talks, workshops, and panels and decide what topics will
+              be discussed. Then people convene in separate breakout sessions. In
+              other words, an unconference has no agenda until the morning when
+              participants create it.
+            </p>
+          </div>
+
+          <div class="flex flex-col gap-2">
             <h3 class="lg:text-3xl text-xl ">Venue</h3>
             <p class="lg:text-xl text-sm">Makers</p>
             <p class="lg:text-xl text-sm">5-25 Scrutton Street</p>
@@ -207,8 +217,8 @@ Break</p>
         id="highlights"
         class="bg-main_yellow lg:p-20 p-10 flex flex-col lg:gap-10 gap-7 flex-wrap box-border w-screen min-w-screen max-w-full sm:max-md:justify-center"
       >
-        <h2 class="lg:text-5xl text-2xl flex flex-wrap">uncodebar Highlights</h2>
-        <p>Check out our video highlights from previous events</p>
+        <h2 class="lg:text-5xl text-2xl flex flex-wrap -mb-4 font-semibold">uncodebar Highlights</h2>
+        <p class="font-medium">Check out our video highlights from previous events</p>
       
         <div class="flex flex-col flex-wrap gap-20 sm:flex-row">
           <iframe
@@ -238,12 +248,12 @@ Break</p>
         class="flex flex-col justify-center items-center lg:p-20 p-10 lg:gap-10 gap-7 md:h-screen"
       >
         <img
-          class="max-w-lg"
+          class="p-10 w-screen max-w-xl"
           src="images/contentful.png"
           alt="a logo of contentful"
         >
         <div>
-          <p class="text-center max-w-lg">
+          <p class="text-center text-lg max-w-md font-semibold">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
             voluptatum mollitia! Ullam omnis est soluta nam officia porro facere
             maiores at? Harum a iste labore ratione voluptatibus tempore
