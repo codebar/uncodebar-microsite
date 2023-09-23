@@ -13,12 +13,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     >
+    <!-- Arrow dropdown icon is used -->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     >
   </head>
-  <body class="box-border">
+  <body class="box-border m-0">
     <header>
       <section>
          <nav class="bg-white m-0 w-full border-b border-gray-200 dark:border-gray-600 pb-4">
@@ -368,20 +369,21 @@ Break</p>
       </section>
     </main>
 
-    <footer class="flex flex-col p-10 lg:p-20 gap-10 bg-main_blue text-slate-100 pb-4">
-      <div class="flex flex-col lg:gap-10 gap-7 md:flex-row sm:justify-between">
-        <div class="flex flex-col gap-2 sm:gap-2">
-          <h3>Join our community</h3>
-          <form class="">
+    <footer class="flex flex-col px-10 pt-20 lg:px-20 pb-5 gap-20 bg-main_blue items-center lg:items-stretch">
+      <div class="flex flex-col md:flex-row justify-stretch lg:justify-between gap-7 lg:gap-20"> 
+
+        <div class="flex flex-col gap-5 text-lg lg:text-xl flex-center"> 
+          <h3 class="text-slate-100">Join our community</h3>
+          <form class="flex flex-col md:flex-row gap-5 md:gap-0">
             <label for="e-mail" class="hidden"></label>
             <input
-              class="rounded lg:rounded-b-none md:-me-2 lg:rounded-l-md p-2"
+              class="rounded lg:rounded-b-none md:-me-2 lg:rounded-l-md p-3 font-semibold text-main_blue"
               type="text"
               id="e-mail"
               placeholder="Enter your e-mail"
-            />
+            />  <!-- text-black -->
             <button
-              class="bg-gradient-to-tr from-button_blue to-button_blue_ p-2 pr-8 pl-8 w-max text-white border-none rounded lg:rounded-r-lg"
+              class="bg-gradient-to-tr from-button_blue to-button_blue_ p-2 pr-10 pl-10 w-max text-white border-none rounded lg:rounded-r-lg text-slate-100"
               type="submit"
             >
               JOIN
@@ -391,26 +393,26 @@ Break</p>
 
         <div class="lg:visible lg:px-0.5 lg:py-12 lg:shadow-3xl lg:border-black"></div>
         
-        <div class="flex flex-col gap-2 sm:gap-2">
+        <div class="flex flex-col gap-5 text-lg lg:text-xl text-slate-100">
           <h3>Follow us</h3>
           <div class="flex gap-5">
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-youtube"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/codebar" target="_blank" class="fa fa-twitter fa-lg"></a>
+            <a href="https://www.youtube.com/channel/UCEYz232agE47GHUq8wneBCA" class="fa fa-youtube fa-lg" target="_blank"></a>
+            <a href="https://www.instagram.com/codebarhq/" class="fa fa-instagram fa-lg" target="_blank"></a>
+            <a href="https://www.facebook.com/codebarHQ/" class="fa fa-facebook fa-lg" target="_blank"></a>
           </div>
         </div>
         
         <div class="lg:visible lg:px-0.5 lg:py-12 lg:shadow-3xl lg:border-black"></div>
 
-        <div class="flex flex-col gap-2 sm:gap-2"> 
+        <div class="flex flex-col gap-5 text-lg lg:text-xl text-slate-100"> 
           <h3>Get in touch</h3>
           <p><a href="mailto:hello@codebar.io">hello@codebar.io</a></p>
         </div>
       </div>
 
-      <div class="flex justify-center">
-        <p class="text-xs">
+      <div class="flex justify-center items-center">
+        <p class="text-sm text-slate-100">
           All rights reserved to codebar Charity. Registered UK and Wales
           charity number 1187776.
         </p>
