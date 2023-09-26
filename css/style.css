@@ -876,8 +876,7 @@ video {
 }
 
 .bg-main_blue {
-  --tw-bg-opacity: 1;
-  background-color: rgb(23 0 192 / var(--tw-bg-opacity));
+  background-color: #1401b8;
 }
 
 .bg-main_pink {
