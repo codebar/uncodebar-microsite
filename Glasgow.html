@@ -3,88 +3,121 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Uncodebar</title>
-    <link rel="stylesheet" href="../css/style.css" >
+    <title>Uncodebar Glasgow 2023</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./images/uncodebar-logo.png">
+
+    <link rel="stylesheet" href="./css/style.css" >
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Social media icons are used -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     >
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    >
   </head>
   <body class="box-border">
-
     <header>
       <section>
-        <nav
-          class="flex flex-wrap justify-between items-center lg:p-10 sm:p-5 m-0 w-full bg-white"
-        >
-          <div>
-            <img src="" alt="The logo of uncodebar" >
-          </div>
-          <ul class="flex flex-wrap gap-20">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#event">Event</a></li>
-            <li><a href="#highlights">Highlights</a></li>
-            <li><a href="#sponsor">Sponsor</a></li>
-            <li><a href="#locations">Locations</a></li>
-            <li><a href="#faqs">FAQs</a></li>
-          </ul>
+         <nav class="bg-white m-0 w-full border-b border-gray-200 dark:border-gray-600 pb-4">
+          <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <img src="images/uncodebar-logo.png" alt="The logo of Uncodebar" class="w-40"/> 
+            
+            <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
 
-          <ul
-            class="flex flex-wrap gap-5 text-xs border-solid border-2 border-zinc-800 p-2"
-          >
-            <li><a href="../index.html">London</a></li>
-            <li><a href="../pages/Barcelona.html">Barcelona</a></li>
-            <li><a href="../pages/Glasgow.html">Glasgow</a></li>
-          </ul>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+              <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <li>
+                  <a href="#home" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
+                </li>
+                <li>
+                  <a href="#event" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Event</a>
+                </li>
+                <li>
+                  <a href="#highlights" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Highlights</a>
+                </li>
+                <li>
+                  <a href="#sponsor" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Sponsor</a>
+                </li>
+                <li>
+                  <a href="#locations" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Locations</a>
+                </li>
+                <li>
+                  <a href="#faqs" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">FAQs</a>
+                </li>
+                <li class="lg:hidden">
+                  <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Choose Location<svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/></svg>
+                  </button>
+
+                    <!-- Dropdown menu -->
+                    <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                          <li>
+                            <a href="./index.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">London</a>
+                          </li>
+                          <li>
+                            <a href="./barcelona.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Barcelona</a>
+                          </li>
+                        </ul>
+                    </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="hidden lg:flex">
+              <ul class="flex flex-wrap gap-5 text-xs border-solid border-2 border-zinc-800 p-2">
+                <li><a href="./index.html">London</a></li>
+                <li><a href="./barcelona.html">Barcelona</a></li>
+              </ul>
+            </div>
+          </div>
         </nav>
       </section>
     </header>
 
-    <main class="sm:text-sm">
+    <main>
       <section id="home">
         <div class="flex flex-wrap">
           <div
-            class="flex flex-col bg-blue-500 lg:w-2/4 w-screen justify-center gap-10 lg:p-20 p-10"
+          class="flex flex-col bg-light_blue lg:w-2/4 w-screen justify-center lg:gap-10 gap-7 lg:p-20 p-10"
           >
-            <h1 class="lg:text-5xl text-2xl">uncodebar 2023</h1>
-            <h2 class="lg:text-3xl text-xl">Sat, 9th September | 10:00 - 17:30 BST</h2>
-            <p class="lg:text-xl text-sm">
-              Now in the NINTH year, uncodebar, the codebar unconference is
-              back! Our annual one-day conference that encourages the codebar
-              community to come together, share knowledge, and strengthen the
-              community that supports our workshops.
-            </p>
-            <button
-              class="bg-gradient-to-tr from-blue-800 to-pink-500 p-5 w-max rounded-full text-white border-none"
-              type="submit"
-              type="submit"
-            >
-              GET YOUR TICKETS!
-            </button>
+          <div class="w-min -rotate-12 -ml-1 -mb-10 lg:-ml-1 text-center text-xl font-mono pt-16 lg:pt-4">
+            <p class="font-semibold -m-5">NEW!</p>
+            <span  class="font-semibold">&#8964;</span>
+          </div>
+            <div class="flex flex-col gap-5">
+              <h1 class="lg:text-5xl text-2xl font-semibold">uncodebar Glasgow 2023</h1>
+              <h2 class="lg:text-2xl text-xl">Saturday 18th November | 10:00 - 17:30 GMT</h2>
+            </div>
+            <p class="lg:text-lg text-sm font-semibold">We are so excited to be bringing uncodebar to Glasgow. Uncodebar is our one-day unconference that encourages the codebar community to come together, share knowledge, and strengthen the community that supports our workshops.</p>
+            <!-- <a href="" class="bg-gradient-to-tr from-button_blue to-button_blue_ p-5 w-max rounded-full text-white border-none">GET YOUR TICKET HERE</a> -->
           </div>
 
-          <div class="lg:w-2/4  w-screen">
+          <div class="lg:w-2/4 flex w-screen">
             <img
               class="max-w-full"
-              src="../../images/sample_photo.png"
-              alt="A man and a woman working on a computer in an office"
+              src="./images/kim-diep.jpg"
+              alt="Kim Diep from uncodebar at Google in 2022"
             >
           </div>
         </div>
 
         <div class="flex flex-wrap text-white">
-          <div class="bg-pink-600 lg:text-3xl text-xl md:w-2/4 md:flex w-screen md:flex-col lg:p-20 p-10">
+          <div class="bg-main_pink lg:text-3xl text-xl md:w-2/4 md:flex w-screen md:flex-col lg:p-20 p-10">
             <p>At an unconference:</p>
             <p>- no topics predetermined</p>
             <p>- no keynote speakers</p>
             <p>- no panels or working groups</p>
           </div>
 
-          <div class="bg-blue-900 lg:text-3xl text-xl md:w-2/4 md:flex w-screen md:flex-col lg:p-20 p-10">
+          <div class="bg-main_blue lg:text-3xl text-xl md:w-2/4 md:flex w-screen md:flex-col lg:p-20 p-10">
             <p>Instead:</p>
             <p>+ collaboration</p>
             <p>+ no agenda until the day</p>
@@ -95,47 +128,55 @@
 
       <section
         id="event"
-        class="flex flex-col md:flex-row bg-pink-400 lg:p-20 p-10 gap-5"
+        class="flex flex-col md:flex-row bg-light_pink lg:p-20 p-10 gap-10 font-semibold"
       >
-        <div class="flex flex-col flex-wrap gap-5 lg:w-2/4 min-w-screen">
-          <h2 class="lg:text-5xl text-2xl">The event</h2>
-          <p class="lg:text-xl text-sm">
-            An unconference is a "loosely structured open space event
-            emphasising the informal exchange of information and ideas between
-            participants."
-          </p>
-          <p class="lg:text-xl text-sm">
-            The event lives and dies through the participation of its attendees.
-            You propose talks, workshops, and panels and decide what topics will
-            be discussed. Then people convene in separate breakout sessions. In
-            other words, an unconference has no agenda until the morning when
-            participants create it.
-          </p>
+        <div class="flex flex-col flex-wrap gap-8 lg:w-2/4 min-w-screen">
+          <div class="lg:text-5xl text-2xl lg:pb-2">
+            <h2>The event</h2>
+          </div>
 
-          <div class="flex flex-col gap-2 flex-wrap">
+          <div class="lg:text-xl text-md">
+            <p>
+              An unconference is a "loosely structured open space event
+              emphasising the informal exchange of information and ideas between
+              participants."
+            </p>
+          </div>
+
+          <div class="lg:text-xl text-md">
+            <p>
+              The event lives and dies through the participation of its attendees.
+              You propose talks, workshops, and panels and decide what topics will
+              be discussed. Then people convene in separate breakout sessions. In
+              other words, an unconference has no agenda until the morning when
+              participants create it.
+            </p>
+          </div>
+
+          <div class="flex flex-col gap-2">
             <h3 class="lg:text-3xl text-xl ">Venue</h3>
-            <p class="lg:text-xl text-sm">Makers</p>
-            <p class="lg:text-xl text-sm">5-25 Scrutton Street</p>
+            <p class="lg:text-xl text-sm">Civic House</p>
+            <!-- <p class="lg:text-xl text-sm">5-25 Scrutton Street</p>
             <p class="lg:text-xl text-sm">Unit 1FG- Unit 2FG</p>
             <p class="lg:text-xl text-sm">London</p>
-            <p class="lg:text-xl text-sm">EC2A 4HJ</p>
+            <p class="lg:text-xl text-sm">EC2A 4HJ</p> -->
           </div>
 
           <div class="flex flex-col gap-2">
             <h3 class="lg:text-3xl text-xl">Accesibility information</h3>
-            <p class="lg:text-xl text-sm">
+            <!-- <p class="lg:text-xl text-sm">
               Makers are fully accesible and step free with a lift to the 2nd
               floor where they host events. Makers have accesible and gender
               neutral toilets.
-            </p>
+            </p> -->
           </div>
 
-          <button
-            class="bg-gradient-to-tr from-blue-800 to-pink-500 p-5 w-max rounded-full text-white border-none"
+          <!-- <button
+            class="bg-gradient-to-tr from-button_blue to-button_blue_ p-5 w-max rounded-full text-white border-none"
             type="submit"
           >
             GET YOUR TICKETS
-          </button>
+          </button> -->
         </div>
 
         <div class="flex flex-col flex-wrap gap-5 lg:w-2/4 w-screen border-solid border-2 border-slate-950 min-w-fit max-w-full p-10 md:pl-20">
@@ -163,173 +204,192 @@ Break</p>
 
       <section
         id="highlights"
-        class="bg-amber-400 lg:p-20 p-10 flex flex-col gap-10 flex-wrap box-border w-screen min-w-screen max-w-full sm:max-md:justify-center"
-      >
-        <h2 class="lg:text-5xl text-2xl flex flex-wrap">uncodebar Highlights</h2>
-        <p>Check out our video highlights from previous events</p>
-      
-        <div class="flex flex-col flex-wrap gap-20 sm:flex-row">
-          <iframe
-          class="max-w-max w-full sm:min-w-min"
-          src="https://www.youtube.com/embed/eMKcynl-A8o"
-          ></iframe>
-          <iframe
-          class="max-w-max w-full sm:min-w-min" 
-          src="https://www.youtube.com/embed/eMKcynl-A8o"
-          ></iframe>
-          <iframe
-          class="max-w-max w-full sm:min-w-min"
-          src="https://www.youtube.com/embed/eMKcynl-A8o"
-          ></iframe>
+        class="flex flex-col gap-7 lg:gap-10 bg-main_yellow lg:p-20 p-10 box-border min-w-screen w-screen max-w-full sm:max-lg:justify-center "
+      > 
+         <div class="flex flex-col flex-wrap gap-2 items-center sm:items-baseline">
+          <h2 class="lg:text-5xl text-2xl font-semibold">uncodebar Highlights</h2> 
+          <p class="font-medium text-md">Check out our video highlights from previous events</p>
         </div>
-        <button
-        class="bg-gradient-to-tr from-blue-800 to-pink-500 p-5 w-max rounded-full text-white border-none"
-        type="submit"
-        >
-        GET YOUR TICKETS
-        </button>
-
-    </section>
-
-      <section
-        id="sponsor"
-        class="flex flex-col justify-center items-center lg:p-20 p-10 gap-10"
-      >
-        <img
-          class="max-w-lg w-56"
-          src="../../logo/sample_sponsor.png"
-          alt="a logo of contentful"
-        >
-        <div>
-          <p class="text-center max-w-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
-            voluptatum mollitia! Ullam omnis est soluta nam officia porro facere
-            maiores at? Harum a iste labore ratione voluptatibus tempore
-            incidunt possimus.
-          </p>
+  
+        <div class="sm:grid sm:grid-cols-3 gap-10 sm:gap-2 md:gap-5 lg:gap-10 flex flex-wrap sm:px-0 justify-center items-center">
+            <iframe src="https://www.youtube.com/embed/eMKcynl-A8o" class="sm:w-full w-11/12 aspect-video shadow-xl rounded-sm"></iframe>
+            <iframe src="https://www.youtube.com/embed/eMKcynl-A8o" class="sm:w-full w-11/12 aspect-video shadow-xl rounded-sm"></iframe>
+            <iframe src="https://www.youtube.com/embed/eMKcynl-A8o" class="sm:w-full w-11/12 aspect-video shadow-xl rounded-sm"></iframe>
         </div>
-        <button
-          class="bg-gradient-to-tr from-blue-800 to-pink-500 p-5 w-max rounded-full text-white border-none"
+
+          <!-- <button
+          class="bg-gradient-to-tr from-button_blue to-button_blue_ p-5 w-max rounded-full text-white border-none"
           type="submit"
           >
-          FIND OUT MORE
-        </button>
-      </section>
+          GET YOUR TICKETS
+        </button> -->
       
-      <section id="locations" class="bg-blue-800 flex flex-col">
-        <div class="lg:p-20 p-10 text-white flex flex-col gap-5">
+      </section>
+
+      <section id="sponsor" class="flex flex-col justify-center items-center lg:p-20 p-10" >
+        <img class="p-10 w-screen max-w-xl" src="images/contentful.png" alt="a logo of contentful">
+        <div>
+          <p class="text-center text-lg max-w-md font-semibold mb-10">More than a headless CMS, Contentful is the API-first composable content platform to create, manage and publish content on any digital channel.</p>
+        </div>
+        <a href="https://www.contentful.com/" class="bg-gradient-to-tr from-button_blue to-button_blue_ py-5 px-9 rounded-full text-white" target="_blank">FIND OUT MORE</a>
+      </section> 
+      
+      <section id="locations" class="bg-main_blue flex flex-col">
+        <div class="lg:pt-20 pt-10 lg:pl-20 pl-10 text-white flex flex-col gap-5">
           <h2 class="lg:text-5xl text-2xl">Our locations</h2>
-          <p class="lg:text-xl text-sm">
-            uncodebar has <strong>3 locations</strong>, London, Glasgow &
-            Barcelona.
-          </p>
+          <p class="lg:text-xl text-sm">uncodebar happens in <strong>3 locations </strong>- London, Glasgow & Barcelona.</p>
         </div>
 
         <div class="flex flex-col relative items-end justify-end sm:flex-row sm:top-24">
-          <div class="max-w-lg p-10 lg:p-20 flex flex-col text-center justify-center items-center gap-10 bg-yellow-500">
-            <h3 class="text-2xl">London</h3>
-            <p class="lg:text-xl text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem enim ducimus culpa nulla sit!
-            </p>
-            <button class="bg-gradient-to-tr from-blue-800 to-pink-500 p-5 w-max rounded-full text-white border-none" type="submit"> VISIT LONDON
-            </button>
-          </div>
           
-          <div class="max-w-lg p-10 lg:p-20 flex flex-col text-center justify-center items-center gap-10 bg-blue-500">
-            <h3 class="text-2xl">Barcelona</h3>
-            <p class="lg:text-xl text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem enim ducimus culpa nulla sit!
-            </p>
-            <button class="bg-gradient-to-tr from-blue-800 to-pink-500 p-5 w-max rounded-full text-white border-none" type="submit"> VISIT BARCELONA
-            </button>
+          <div class="max-w-lg p-10 lg:p-20 flex flex-col text-center text-main_blue font-semibold justify-center items-center lg:gap-10 gap-7 bg-main_yellow ">
+            <h3 class="text-2xl">London</h3>
+            <p class="lg:text-xl text-sm">We have ran uncodebar in London for 9 years. It is always our communities highlight of the year.</p>
+            <a href="index.html" class="bg-gradient-to-tr from-button_blue to-button_blue_ py-5 px-9 rounded-full text-white">VISIT LONDON</a>
           </div>
+
+          <div class="max-w-lg p-10 lg:p-20 flex flex-col text-center justify-center items-center lg:gap-10 gap-7 text-main_blue font-semibold bg-turquoise">
+            <h3 class="text-2xl">Barcelona</h3>
+            <p class="lg:text-xl text-sm">We are so excited to be bringing uncodebar to Barcelona on Saturday 11th November.</p>
+            <a href="glasgow.html" class="bg-gradient-to-tr from-button_blue to-button_blue_ py-5 px-9 rounded-full text-white">VISIT BARCELONA</a>
+          </div>
+
         </div>
       </section>
 
-      <section id="faqs" class="mt-0 sm:mt-20">
+      <section id="faqs" class="mt-0 sm:mt-20 h-full">
         <div class="flex flex-col gap-5 p-10 lg:p-20">
           <h2 class="lg:text-5xl text-3xl">Frequently Asked Questions</h2>
 
-          <!-- accordion menu -->
-          <div class="flex flex-col items-start" >
-            <button class="flex justify-start md:justify-between p-1 md:p-2 text-sm">
-              <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong>
-              <i class="material-icons">arrow_drop_up</i>
-            </button>
-            <div class="hidden p-2">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Distinctio earum laboriosam esse consequuntur fugiat labore
-                dolore perferendis aut alias rerum illum at, quia cum! Placeat
-                mollitia quam voluptates odio vel.
-              </p>
-            </div>
-          </div>
+          <!-- Customized accordion menu (flowbite) -->
 
-          <div class="flex flex-col items-start">
-            <button class="flex justify-start md:justify-between p-1 md:p-2 text-sm">
-              <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong>
-              <i class="material-icons">arrow_drop_up</i>
-            </button>
-            <div class="hidden p-2">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Distinctio earum laboriosam esse consequuntur fugiat labore
-                dolore perferendis aut alias rerum illum at, quia cum! Placeat
-                mollitia quam voluptates odio vel.
-              </p>
-            </div>
-          </div>
+          <div id="accordion-collapse" data-accordion="collapse" class="mt-10">
 
-          <div class="flex flex-col items-start">
-            <button class="flex justify-start md:justify-between p-1 md:p-2 text-sm">
-              <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong>
-              <i class="material-icons">arrow_drop_up</i>
-            </button>
-            <div class="hidden p-2">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Distinctio earum laboriosam esse consequuntur fugiat labore
-                dolore perferendis aut alias rerum illum at, quia cum! Placeat
-                mollitia quam voluptates odio vel.
-              </p>
+            <!-- Question 1 -->
+            <h2 id="accordion-collapse-heading-1">
+              <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+                <span>Does codebar have a Code of Conduct?</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+              <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                <p class="mb-2 text-gray-500 dark:text-gray-400">Absolutely, and we take it very seriously. Please take a read <a href="https://codebar.io/code-of-conduct" target="_blank" class="underline">here</a>.</p>
+              </div>
             </div>
-          </div>
 
-          <div class="flex flex-col items-start">
-            <button class="flex justify-start md:justify-between p-1 md:p-2 text-sm">
-              <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong>
-              <i class="material-icons">arrow_drop_down</i>
-            </button>
-            <div class="flex justify-start md:justify-between p-1 md:p-2">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Distinctio earum laboriosam esse consequuntur fugiat labore
-                dolore perferendis aut alias rerum illum at, quia cum! Placeat
-                mollitia quam voluptates odio vel.
-              </p>
+            <!-- Question 2 -->
+
+            <h2 id="accordion-collapse-heading-2">
+              <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
+                <span>How much does it cost to attend uncodebar?</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+              <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                <p class="mb-2 text-gray-500 dark:text-gray-400">It is 100% free! We are really lucky to have some great companies who support uncodebar and ensure all our events will be free, forever!</p>
+              </div>
             </div>
+
+            <!-- Question 3 -->
+            <h2 id="accordion-collapse-heading-3">
+              <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
+                <span>I'd love to attend in Glasgow but I can't afford the travel, is codebar able to help?</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+              <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+                <p class="mb-2 text-gray-500 dark:text-gray-400">If you are in the UK, we may have some budget to page for your travel. Please fill in this form. Unfortunately, if you're outside the UK, we don't have budget. We would love to help everyone but securing sponsorship this year has been tougher than ever before.</p>
+              </div>
+            </div>
+
+            <!-- Question 4 -->
+            <h2 id="accordion-collapse-heading-4">
+              <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-4" aria-expanded="false" aria-controls="accordion-collapse-body-3">
+                <span>Is this event virtual or in-person?</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-collapse-body-4" class="hidden" aria-labelledby="accordion-collapse-heading-4">
+              <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+                <p class="mb-2 text-gray-500 dark:text-gray-400">This event is just in person.</p>
+              </div>
+            </div>
+
+             <!-- Question 5 -->
+             <h2 id="accordion-collapse-heading-5">
+              <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-5" aria-expanded="false" aria-controls="accordion-collapse-body-5">
+                <span>Will sessions be recorded?</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-collapse-body-5" class="hidden" aria-labelledby="accordion-collapse-heading-5">
+              <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+                <p class="mb-2 text-gray-500 dark:text-gray-400">Nope. The whole goal of an unconference is that it is personal, and intimate. We record lots of other amazing sessions, please check them out on our <a href="https://www.youtube.com/channel/UCEYz232agE47GHUq8wneBCA" target="_blank" class="underline">YouTube</a>.</p>
+              </div>
+            </div>
+
+            <!-- Question 6 -->
+            <h2 id="accordion-collapse-heading-6">
+              <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-6" aria-expanded="false" aria-controls="accordion-collapse-body-6">
+                <span>How do we become a sponsor of uncodebar?</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-collapse-body-6" class="hidden" aria-labelledby="accordion-collapse-heading-6">
+              <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+                <p class="mb-2 text-gray-500 dark:text-gray-400">We are always looking for amazing companies to come on board and sponsor our events. Whether it's big ones like this, or smaller ones. Please drop us an <a href="mailto:hello@codebar.io" target="_blank" class="underline">email</a>.</p>
+              </div>
+            </div>
+
+            <!-- Question 7 -->
+            <h2 id="accordion-collapse-heading-7">
+              <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-collapse-body-7" aria-expanded="false" aria-controls="accordion-collapse-body-6">
+                <span>Can I ask another question?</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-collapse-body-7" class="hidden" aria-labelledby="accordion-collapse-heading-7">
+              <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+                <p class="mb-2 text-gray-500 dark:text-gray-400">Yes, please do! You can drop Kimberley Cook a direct message in the <a href="https://slack.codebar.io/" class="underline">codebar Slack</a>, you can send us a DM on any of our socials,  or send us<a href="mailto:hello@codebar.io" class="underline"> an email</a>.</p>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="flex flex-col p-10 lg:p-20 gap-10 bg-blue-800 text-slate-100 pb-4">
-      <div class="flex flex-col gap-10 sm:flex-row sm:justify-between">
-        <div class="flex flex-col gap-2 sm:gap-2">
-          <h3>Join our community</h3>
-          <form class="sm-max-md:flex-row sm-max:md:gap-2 sm:max-lg:flex">
-            <label for="e-mail"></label>
+    <footer class="flex flex-col flex-wrap gap-10 lg:gap-20 bg-main_blue lg:items-stretch px-10 pt-20 lg:px-20 pb-5 w-screen items-center">
+      <div class="flex flex-col lg:flex-row justify-between gap-10">
+        <div class="flex flex-col flex-wrap gap-5 text-lg lg:text-xl flex-center"> 
+          <h3 class="text-slate-100">Join our community</h3>
+          <form class="">
+            <label for="e-mail" class="hidden"></label>
             <input
-              class="border-none md:rounded-b-none md:-me-2 md:rounded-l-lg p-2"
+              class="rounded md:rounded-tr-none md:rounded-l-lg md:-me-2 p-3"
               type="text"
               id="e-mail"
               placeholder="Enter your e-mail"
-            />
+            /> 
             <button
-              class="bg-gradient-to-tr from-blue-800 to-pink-500 p-2 pr-8 pl-8 w-max text-white border-none md:rounded-r-lg"
+              class="bg-gradient-to-tr w-max from-button_blue to-button_blue_ p-3 pr-10 pl-10 rounded md:rounded-r-md md:rounded-l-none text-slate-100"
               type="submit"
             >
               JOIN
@@ -337,28 +397,35 @@ Break</p>
           </form>
         </div>
 
-        <div class="flex flex-col gap-2 sm:gap-2">
+        <div class="lg:visible lg:px-0.5 lg:py-12 lg:shadow-3xl lg:border-black"></div>
+        
+        <div class="flex flex-col gap-5 text-lg lg:text-xl text-slate-100">
           <h3>Follow us</h3>
           <div class="flex gap-5">
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-youtube"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/codebarGlasgow" target="_blank" class="fa fa-twitter fa-lg"></a>
+            <a href="https://www.youtube.com/channel/UCEYz232agE47GHUq8wneBCA" class="fa fa-youtube fa-lg" target="_blank"></a>
+            <a href="https://www.instagram.com/codebarglasgow/" class="fa fa-instagram fa-lg" target="_blank"></a>
+            <a href="https://www.facebook.com/codebarHQ/" class="fa fa-facebook fa-lg" target="_blank"></a>
           </div>
         </div>
+        
+        <div class="lg:visible lg:px-0.5 lg:py-12 lg:shadow-3xl lg:border-black"></div>
 
-        <div class="flex flex-col gap-2 sm:gap-2">
+        <div class="flex flex-col gap-5 text-lg lg:text-xl text-slate-100"> 
           <h3>Get in touch</h3>
-          <p><a href="mailto:hello@codebar.io">hello@codebar.io</a></p>
+          <p><a href="mailto:hello@codebar.io">glasgow@codebar.io</a></p>
         </div>
       </div>
 
-      <div class="flex justify-center">
-        <p class="text-xs">
+      <div class="flex justify-center items-center">
+        <p class="text-sm text-slate-100">
           All rights reserved to codebar Charity. Registered UK and Wales
           charity number 1187776.
         </p>
       </div>
     </footer>
+
+    <!-- Flowbite -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
   </body>
 </html>
