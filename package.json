@@ -1,0 +1,19 @@
+{
+  "name": "uncodebar-microsite",
+  "version": "1.0.0",
+  "description": "uncodebar microsite",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "watch:css": "nodemon --watch css/style.css --exec 'npx tailwindcss build -i css/style.css -o css/output.css && browser-sync reload'",
+    "start": "concurrently \"browser-sync start --server '.' --files 'css/output.css, *.html'\" \"npm run watch:css\""
+  },
+  "dependencies": {
+    "tailwindcss": "^3.3.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "concurrently": "^8.2.1",
+    "nodemon": "^3.0.1"
+  }
+}

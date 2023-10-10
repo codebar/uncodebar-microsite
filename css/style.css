@@ -1,3 +1,7 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 .bg-light_blue {
   background-color: #4bafff;
 }
@@ -23,8 +27,9 @@
 }
 
 .bg-gray-50 {
-  --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+
+  --tw-bg-opacity: 1;
 }
 
 .bg-gradient-to-tr {
@@ -48,7 +53,23 @@
 }
 
 .lg\:shadow-3xl {
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+
   --tw-shadow: 20px 0px 400px 20px #FFFFFF;
   --tw-shadow-colored: 20px 0px 400px 20px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add this CSS for visually hidden content */
+.visually-hidden {
+  position: absolute !important;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  border: 0 !important;
 }
