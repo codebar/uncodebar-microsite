@@ -554,10 +554,6 @@ video {
   position: static;
 }
 
-.fixed {
-  position: fixed;
-}
-
 .absolute {
   position: absolute;
 }
@@ -566,20 +562,12 @@ video {
   position: relative;
 }
 
-.top-0 {
-  top: 0px;
-}
-
 .top-40 {
   top: 10rem;
 }
 
 .z-10 {
   z-index: 10;
-}
-
-.z-50 {
-  z-index: 50;
 }
 
 .-m-5 {
@@ -629,14 +617,6 @@ video {
 
 .mt-4 {
   margin-top: 1rem;
-}
-
-.mt-\[138px\] {
-  margin-top: 138px;
-}
-
-.mt-\[90px\] {
-  margin-top: 90px;
 }
 
 .box-border {
@@ -725,10 +705,6 @@ video {
 
 .w-5 {
   width: 1.25rem;
-}
-
-.w-auto {
-  width: auto;
 }
 
 .w-full {
