@@ -37,7 +37,7 @@
 <body class="box-border m-0">
   <header>
     <section>
-      <nav class="bg-gray-800 m-0 w-full border-b border-gray-800 dark:border-gray-700">
+      <nav id="nav" class="fixed top-0 z-50 bg-gray-800 m-0 w-full border-b border-gray-800 dark:border-gray-700">
         <div class="top-40 md:dark:bg-gray-800 max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a id="top" href="#">
             <img src="images/uncodebar-white-logo.png" alt="The logo of Uncodebar" class="w-40" />
@@ -560,6 +560,36 @@
 
   <!-- Flowbite -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+  <script>
+    let lastScrollPosition = 0;
+    const SCROLL_BUFFER = 12;
+    const navElement = document.getElementById("nav");
+
+    function getScrollTop() {
+      return window.pageYOffset || document.documentElement.scrollTop;
+    }
+
+    function hasScrolledSignificantly(oldScroll, newScroll) {
+      return Math.abs(newScroll - oldScroll) > SCROLL_BUFFER;
+    }
+
+    function handleScrollDirectionChange(scrollTop) {
+      if (scrollTop > lastScrollPosition) {
+        navElement.classList.add('will-hide');
+      } else {
+        navElement.classList.remove('will-hide');
+      }
+      lastScrollPosition = scrollTop;
+    }
+
+    window.addEventListener("scroll", function () {
+      const currentScrollPosition = getScrollTop();
+      if (hasScrolledSignificantly(lastScrollPosition, currentScrollPosition)) {
+        handleScrollDirectionChange(currentScrollPosition);
+      }
+    });
+
+  </script>
 </body>
 
 </html>
