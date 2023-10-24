@@ -73,3 +73,15 @@ html {
   height: 1px !important;
   border: 0 !important;
 }
+
+#nav {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease, visibility 0s ease 0.3s;
+
+}
+
+.will-hide {
+  opacity: 0 !important;
+  transition: opacity 0.3s ease, visibility 0s ease 0s;
+}

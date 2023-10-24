@@ -727,10 +727,6 @@ video {
   width: 1.25rem;
 }
 
-.w-auto {
-  width: auto;
-}
-
 .w-full {
   width: 100%;
 }
@@ -1198,6 +1194,17 @@ html {
   width: 1px !important;
   height: 1px !important;
   border: 0 !important;
+}
+
+#nav {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease, visibility 0s ease 0.3s;
+}
+
+.will-hide {
+  opacity: 0 !important;
+  transition: opacity 0.3s ease, visibility 0s ease 0s;
 }
 
 .hover\:bg-gray-100:hover {
