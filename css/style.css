@@ -26,6 +26,14 @@
   background-color: #74fad0;
 }
 
+.bg-gold {
+  background-color: #FFD700;
+}
+
+.bg-dark-green {
+  background-color: #4C9A2A;
+}
+
 .bg-gray-50 {
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 
@@ -61,6 +69,14 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+.gold-box {
+  border: 2px solid #FFD700;
+}
+
+.dark-green-box {
+  border: 2px solid #4C9A2A;
 }
 
 /* Add this CSS for visually hidden content */
