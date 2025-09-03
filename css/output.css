@@ -699,6 +699,10 @@ video {
   max-height: 7rem;
 }
 
+.max-h-52 {
+  max-height: 13rem;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -1133,6 +1137,11 @@ video {
   color: rgb(241 245 249 / var(--tw-text-opacity));
 }
 
+.text-violet-50 {
+  --tw-text-opacity: 1;
+  color: rgb(245 243 255 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1426,6 +1435,10 @@ html {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:w-1\/4 {
+    width: 25%;
   }
 
   .md\:w-2\/4 {
