@@ -2,6 +2,26 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+.text-universal-blue {
+  color: #1e1d3d;
+}
+
+.text-light_blue {
+  color: #4bafff;
+}
+
+.bg-nude {
+  background-color: #f3f2ee;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-universal-blue{
+background-color: #1e1d3d;
+}
+
 .bg-light_blue {
   background-color: #4bafff;
 }

@@ -1,7 +1,7 @@
 
-# uncodebar Microsite
+# codebar courses Microsite
 
-Welcome to the `uncodebar-microsite` repository. This microsite is dedicated to the uncodebar event.
+Welcome to the `codebar-courses-website` repository. This microsite is dedicated to the uncodebar event.
 
 ## Features
 
@@ -14,13 +14,13 @@ Welcome to the `uncodebar-microsite` repository. This microsite is dedicated to 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/uncodebar-microsite.git
+git clone https://github.com/codebar/codebar-courses-website.git
 ```
 
 2.  Navigate to the project directory:
 
 ```bash
-cd uncodebar-microsite
+cd codebar-courses-website
 ```
 
 3. Install the dependencies: (if you don't want to use the build tool include the style.css in the doc head, and tailwind CDN link )
@@ -59,7 +59,7 @@ This project is licensed under the MIT License.
 
 ### DOCS.md
 
-# uncodebar Microsite Documentation
+# website Documentation
 
 ## Project Structure
 
