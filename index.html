@@ -32,6 +32,29 @@
   <meta property="og:url" content="https://uncodebar.com" />
   <meta property="og:image" content="./images/social-banner.png" />
 
+<!--newsletter sign up code -->
+<script>
+  (function(w, d, t, h, s, n) {
+    w.FlodeskObject = n;
+    var fn = function() {
+      (w[n].q = w[n].q || []).push(arguments);
+    };
+    w[n] = w[n] || fn;
+    var f = d.getElementsByTagName(t)[0];
+    var v = '?v=' + Math.floor(new Date().getTime() / (120 * 1000)) * 60;
+    var sm = d.createElement(t);
+    sm.async = true;
+    sm.type = 'module';
+    sm.src = h + s + '.mjs' + v;
+    f.parentNode.insertBefore(sm, f);
+    var sn = d.createElement(t);
+    sn.async = true;
+    sn.noModule = true;
+    sn.src = h + s + '.js' + v;
+    f.parentNode.insertBefore(sn, f);
+  })(window, document, 'script', 'https://assets.flodesk.com', '/universal', 'fd');
+</script>
+
 </head>
 
 <body class="box-border m-0">
@@ -283,11 +306,11 @@
       </div>
     </section>
   -->
-    <section class="flex flex-wrap">
+    <section class="flex flex-wrap bg-light_blue">
       <div class="md:w-2/4 md:flex w-screen md:flex-col">
         <img src="images/uncodebar-speaker-shot.jpg" class="" alt="Pink speech marks">
       </div>
-      <div class="flex md:w-2/4 md:flex w-screen md:flex-col bg-light_blue md:pt-0 pt-10 md:pb-0 pb-10">
+      <div class="flex md:w-2/4 md:flex w-screen md:flex-col md:pt-0 pt-10 md:pb-0 pb-10">
         <div class="w-8/12 m-auto">
           <h3 class="text-3xl font-bold mb-6">Join us as a sponsor this year!</h3>
           <ul role="list" class="list-disc pl-5">
@@ -508,59 +531,10 @@
 
   <footer
     class="flex flex-col flex-wrap gap-10 lg:gap-20 bg-main_blue lg:items-stretch px-10 pt-20 lg:px-20 pb-5 max-w-screen items-center">
-    <div class="flex flex-col lg:flex-row justify-between gap-10">
-      <div class="flex flex-col flex-wrap gap-5 text-lg lg:text-xl flex-center">
-        <h3 class="text-slate-100">Join our community</h3>
+    <div class="flex flex-col lg:flex-row justify-evenly gap-10">
 
-        <div id="mc_embed_shell">
-          <link href="https://cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
-          <style type="text/css">
-            #mc_embed_signup {
-              clear: left;
-              width: 150%;
-              background: #1401b8;
-              font: 14px Helvetica, Arial, sans-serif;
-            }
 
-            #mc_embed_signup form {
-              margin: 0;
-            }
-
-            @media only screen and (max-width: 400px) {
-              #mc_embed_signup {
-                width: 100%;
-              }
-            }
-          </style>
-          <div id="mc_embed_signup">
-            <form
-              action="https://codebar.us8.list-manage.com/subscribe/post?u=b4652d85b385945c79f2ffa2e&amp;id=3798974cb3&amp;f_id=00e516e1f0"
-              method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-              target="_blank">
-              <div id="mc_embed_signup_scroll">
-                <div class="mc-field-group"><input type="email" name="EMAIL" class="required email" id="mce-EMAIL"
-                    required="" value="Enter your email"></div>
-                <div id="mce-responses" class="clear">
-                  <div class="response" id="mce-error-response" style="display: none;"></div>
-                  <div class="response" id="mce-success-response" style="display: none;"></div>
-                </div>
-                <div aria-hidden="true" style="position: absolute; left: -5000px;"><input type="text"
-                    name="b_b4652d85b385945c79f2ffa2e_3798974cb3" tabindex="-1" value=""></div>
-                <div class="clear"><input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button"
-                    value="Join"></div>
-              </div>
-            </form>
-          </div>
-
-          <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-          <script
-            type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
-        </div>
-      </div>
-
-      <div class="hidden lg:inline-flex lg:px-0.5 lg:py-12 lg:shadow-3xl lg:border-black"></div>
-
-      <div class="flex flex-col gap-5 text-lg lg:text-xl text-slate-100">
+      <div class="flex flex-col gap-5 text-lg lg:text-xl text-slate-100 flex-center">
         <h3>Follow us</h3>
         <div class="flex gap-5">
           <a href="https://www.instagram.com/codebarhq/" class="fa fa-instagram fa-lg" target="_blank"></a>
@@ -573,7 +547,16 @@
         </div>
       </div>
 
-      <div class="hidden lg:inline-flex lg:px-0.5 lg:py-12 lg:shadow-3xl lg:border-black"></div>
+
+      <div class="flex flex-col flex-wrap gap-5 text-lg lg:text-xl flex-center">
+        <div id="fd-form-69de569b9baa96463231a5c4"></div>
+        <script>
+          window.fd('form', {
+            formId: '69de569b9baa96463231a5c4',
+            containerEl: '#fd-form-69de569b9baa96463231a5c4'
+          });
+        </script>
+      </div>
 
       <div class="flex flex-col gap-5 text-lg lg:text-xl text-slate-100">
         <h3>Get in touch</h3>
