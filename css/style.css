@@ -34,6 +34,14 @@
   background-color: #4C9A2A;
 }
 
+.bg-dark-red {
+  background-color: #DC143C;
+}
+
+.bg-purple {
+  background-color: #7600BC;
+}
+
 .bg-gray-50 {
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 
@@ -75,8 +83,16 @@ html {
   border: 2px solid #FFD700;
 }
 
+.purple-box {
+  border: 2px solid #7600BC;
+}
+
 .dark-green-box {
   border: 2px solid #4C9A2A;
+}
+
+.dark-red-box {
+  border: 2px solid #DC143C;
 }
 
 /* Add this CSS for visually hidden content */
